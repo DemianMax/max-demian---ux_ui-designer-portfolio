@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Demian - UX/UI Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg-primary': '#F8F8F8', // Fundo Primário
+              'brand-text-primary': '#2C3E50', // Texto Primário
+              'brand-highlight-primary': '#FFCC00', // Destaque Primário (Amarelo Vibrante)
+              'brand-highlight-secondary': '#3498DB', // Destaque Secundário (Azul Médio Vibrante)
+              'brand-bg-alt': '#EAEAEA', // Fundo de Seções Alternativas (um pouco mais escuro que F8F8F8)
+              'brand-text-on-highlight': '#2C3E50', // Texto para usar sobre o highlight primário para contraste
+            },
+            fontFamily: {
+              sans: ['Open Sans', 'system-ui', 'sans-serif'],
+              headings: ['Montserrat', 'system-ui', 'sans-serif'],
+            },
+            height: {
+              '80vh': '80vh',
+              '90vh': '90vh',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-brand-bg-primary text-brand-text-primary font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
